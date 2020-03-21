@@ -10,6 +10,7 @@ import { MenuComponent } from './menu/menu.component';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -53,6 +54,7 @@ import { LoginComponent } from './login/login.component';
     MatListModule,
     MatSelectModule,
     MatSlideToggleModule,
+    MatProgressSpinnerModule,
     MatGridListModule,
     MatCardModule,
     MatFormFieldModule, 
