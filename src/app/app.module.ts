@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { baseURL } from './shared/baseurl';
 
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
@@ -13,6 +15,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSliderModule } from '@angular/material/slider';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
@@ -64,12 +67,15 @@ import { LoginComponent } from './login/login.component';
     FlexLayoutModule,
     MatDialogModule,
     FormsModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    MatSliderModule,
+    HttpClientModule
   ],
   providers: [
   	DishService,
   	PromotionService,
-  	LeaderService
+  	LeaderService,
+    {provide: 'BaseURL', useValue: baseURL}
   ],
   entryComponents: [
         LoginComponent
