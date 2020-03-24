@@ -5,7 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { baseURL } from './shared/baseurl';
+import { BaseURL } from './shared/baseurl';
 
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
@@ -77,7 +77,7 @@ import { LoginComponent } from './login/login.component';
   	PromotionService,
   	LeaderService,
     ProcessHTTPMsgService,
-    {provide: 'BaseURL', useValue: baseURL}
+    {provide: 'BaseURL', useValue: BaseURL}
   ],
   entryComponents: [
         LoginComponent
