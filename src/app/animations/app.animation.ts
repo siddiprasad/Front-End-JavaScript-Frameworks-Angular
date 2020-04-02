@@ -36,3 +36,5 @@ export function expand() {
         ])
     ]);
 }
+
+export function disappear(){ }
